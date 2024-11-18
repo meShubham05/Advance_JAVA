@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <display-name>sendRedirectDemo__Internal__Redirect</display-name>
+
+	<servlet>
+	<servlet-name>mylogin</servlet-name>
+	<servlet-class>sendRedirectDemo__Internal__Redirect.Login</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	
+	<servlet-name>mylogin</servlet-name>
+	<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	
+	<servlet-name>myLogout</servlet-name>
+	<servlet-class>sendRedirectDemo__Internal__Redirect.Logout</servlet-class>
+	
+	</servlet>
+	
+	<servlet-mapping>
+	
+	<servlet-name>myLogout</servlet-name>
+	<url-pattern>/logout</url-pattern>
+	
+	</servlet-mapping>
+</web-app>
